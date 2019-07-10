@@ -3,15 +3,17 @@
 #include<time.h>
 
 int main(){
-  int a,b;
+  int a,b,d;
   srand((unsigned int)time(NULL));
   a=rand()%6+1;
   b=rand()%6+1;
+  d=rand()%6+1;
   printf("Rolling the dice...\n");
   printf("Value: %d\n",a);
   printf("Value: %d\n",b);
-  printf("Total Value: %d\n",a+b);
-   if(a+b>7){
+  printf("Value: %d\n",d);
+  printf("Total Value: %d\n",a+b+d);
+   if(a+b+d>7){
   printf("%s won!\n",c);
  }
   else{
